@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "../assets/css/main.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import Header from "@/components/global/header";
+import Footer from "@/components/global/footer";
 
 export const metadata: Metadata = {
   title: "Ofriend",
@@ -14,14 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main className="relative overflow-x-hidden">
+            <Header />
+            {children}
+            <Footer />
+          </main>
         </ThemeProvider>
       </body>
     </html>
