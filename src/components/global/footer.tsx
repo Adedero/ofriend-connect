@@ -3,6 +3,7 @@ import Logo from "../app/logo";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Separator } from "../ui/separator";
+import Socials from "./socials";
 
 export default function Footer() {
   const copyrightYear = process.env.NEXT_PUBLIC_COPYRIGHT_YEAR;
@@ -10,7 +11,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="bg-midnight p-5 md:p-10 text-white">
-        <Logo shapeColor="fill-white" />
+        <Logo size={32} shapeClass="fill-white" />
 
         <div className="gap-4 grid lg:grid-cols-5 mt-3">
           <div className="space-y-3 lg:col-span-2">
@@ -52,7 +53,9 @@ export default function Footer() {
         </div>
 
         {/* Socials */}
-        <div className="flex items-center gap-2 mt-5">Socials</div>
+        <div className="flex items-center gap-2 mt-5">
+          <Socials iconClass="text-white/50" />
+        </div>
 
         <div className="mt-5 mb-2">
           <Separator />

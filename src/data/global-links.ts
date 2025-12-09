@@ -7,6 +7,11 @@ export const headerLinks: NavigationLink[] = [
   },
 
   {
+    label: "About",
+    href: "/about",
+  },
+
+  {
     label: "Products",
     children: [
       {
@@ -15,8 +20,8 @@ export const headerLinks: NavigationLink[] = [
         description: "Lorem ipsum dolor sit ammet consequetur",
       },
       {
-        label: "Checked In",
-        href: "/products/checked-in",
+        label: "Presio",
+        href: "/products/presio",
         description: "Lorem ipsum dolor sit ammet consequetur",
       },
     ],
@@ -28,10 +33,22 @@ export const headerLinks: NavigationLink[] = [
       {
         label: "Schools",
         description: "Lorem ipsum dolor sit ammet consequetur",
+        href: "/industries#schools",
       },
       {
         label: "Businesses",
         description: "Lorem ipsum dolor sit ammet consequetur",
+        href: "/industries#businesses",
+      },
+      {
+        label: "Certificate Programs",
+        description: "Lorem ipsum dolor sit ammet consequetur",
+        href: "/industries#certificate-programs",
+      },
+      {
+        label: "Remote Learning",
+        description: "Lorem ipsum dolor sit ammet consequetur",
+        href: "/industries#remote-learning",
       },
     ],
   },
