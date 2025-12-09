@@ -88,4 +88,122 @@ export const data = {
       },
     ],
   },
+
+  valueProposition: {
+    title: "Value Proposition",
+    headline: "Integrity Is Not Optional",
+    description:
+      "Institutions focused on integrity rely on Ofriend Edu for fair, high-performing solutions.",
+
+    image: {
+      src: "/img/home/value-proposition-img.png",
+      alt: "value proposition",
+      label: "20k+ Remote Learners | 50k+ Educators",
+    },
+
+    values: [
+      {
+        title: "Built for trust",
+        description:
+          "Ensuring integrity, accountability, and reliable performance for every institution.",
+      },
+      {
+        title: "Designed for accuracy",
+        description:
+          "Ensuring precise, reliable, and verifiable results for every institution and user.",
+      },
+      {
+        title: "Ready for real-world demands",
+        description:
+          "Built to handle high-stakes environments with reliability and performance.",
+      },
+    ],
+  },
+
+  industries: {
+    title: "Industries",
+    headline: "Trusted by Institutions That Need Accuracy.",
+    description:
+      "Supports universities, training teams, and certification programs with reliable, integrity-focused tools.",
+
+    industryList: [
+      {
+        name: "Higher Education",
+        imageUrl: "/img/home/industry-higher-education.png",
+      },
+      {
+        name: "Corporate Training",
+        imageUrl: "/img/home/industry-corporate-training.png",
+      },
+      {
+        name: "Certificate Programs",
+        imageUrl: "/img/home/industry-certificate-programs.png",
+      },
+      {
+        name: "Remote Learning",
+        imageUrl: "/img/home/industry-remote-learning.png",
+      },
+    ],
+  },
+
+  about: {
+    title: "About Us",
+    headline: "Engineering Systems That Don't Break Under Pressure.",
+    description:
+      "Ofriend operates in Nigeria and the USA, building enterprise-grade integrity infrastructure for organizations that cannot afford compromised standards. A focused team. A clear mission. Zero tolerance for incompetence.",
+    imageUrl: "/img/home/about-us-img.png",
+    aboutUsList: [
+      {
+        title: "Global engineering team",
+        description:
+          "Ensuring integrity, accountability, and reliable performance for every institution.",
+      },
+      {
+        title: "Rapid production development cycles",
+        description:
+          "Ensuring precise, reliable, and verifiable results for every institution and user.",
+      },
+      {
+        title: "Integrity-first Technology Philosophy",
+        description:
+          "Built to handle high-stakes environments with reliability and performance.",
+      },
+      {
+        title: "Valuation and team metrics",
+        description:
+          "Built to handle high-stakes environments with reliability and performance.",
+      },
+    ],
+  },
+
+  testimonials: {
+    title: "Client Stories",
+    headline: "Real Experiences. Real Trust",
+    description:
+      "Real stories from organizations that rely on Ofriend Edu to maintain integrity, enforce accountability, and achieve consistent performance.",
+
+    testimonialList: [
+      {
+        name: "Dr. Amina Yusuf",
+        quote:
+          "Ofriend Edu has completely transformed our approach to assessments. The AI proctoring and attendance verification give us confidence that integrity is never compromised.",
+        role: "University Administrator",
+        imageUrl: "/img/home/testimonial-user-1.png",
+      },
+      {
+        name: "Mr. Chike Obi",
+        quote:
+          "With Ofriend Edu, we can monitor our remote training programs in real-time. The system's accuracy and reliability have saved us countless hours and eliminated fraud.",
+        role: "Corporate Training Manager",
+        imageUrl: "/img/home/testimonial-user-2.png",
+      },
+      {
+        name: "Prof. John Drey",
+        quote:
+          "The plagiarism detection engine is remarkable. It catches issues we would have missed manually, ensuring every submission meets our strict originality standards.",
+        role: "Academic Co-ordinator",
+        imageUrl: "/img/home/testimonial-user-3.png",
+      },
+    ],
+  },
 };

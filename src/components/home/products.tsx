@@ -75,7 +75,7 @@ function ProductList() {
   });
 
   return (
-    <ul className="gap-4 grid grid-cols-2 md:grid-cols-4 w-full md:max-w-[80%]">
+    <ul className="gap-4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-full lg:max-w-[80%]">
       {orderedList.map((product) => (
         <li key={product.name}>
           <div className="bg-background p-2 rounded-xl">
