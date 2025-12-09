@@ -8,7 +8,7 @@ import HeaderNavigationMobile from "./header-navigation-mobile";
 export default function Header() {
   return (
     <header className="top-0 z-50 fixed bg-background border-b w-screen">
-      <div className="flex justify-between items-center p-5">
+      <div className="flex justify-between items-center px-5 py-3">
         <Link href="/">
           <Logo width={32} />
         </Link>

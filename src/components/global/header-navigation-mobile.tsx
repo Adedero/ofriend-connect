@@ -69,7 +69,10 @@ export default function HeaderNavigationMobile() {
                             variant="ghost"
                             className="justify-start"
                           >
-                            <NextLink href={child.href ?? "#"}>
+                            <NextLink
+                              href={child.href ?? "#"}
+                              exactActiveClass="font-semibold text-electric-600 dark:text-electric"
+                            >
                               {child.label}
                             </NextLink>
                           </Button>
@@ -81,7 +84,12 @@ export default function HeaderNavigationMobile() {
               ) : (
                 <SheetClose asChild key={link.label}>
                   <Button asChild variant="ghost" className="justify-start">
-                    <NextLink href={link.href ?? "#"}>{link.label}</NextLink>
+                    <NextLink
+                      href={link.href ?? "#"}
+                      exactActiveClass="font-semibold text-electric-600 dark:text-electric"
+                    >
+                      {link.label}
+                    </NextLink>
                   </Button>
                 </SheetClose>
               ),

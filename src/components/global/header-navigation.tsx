@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { headerLinks } from "@/data/global-links";
 import { useIsMobile } from "@/hooks/use-mobile";
-import Link from "next/link";
+import NextLink from "../custom/next-link";
 
 export default function HeaderNavigation() {
   const isMobile = useIsMobile();
@@ -26,7 +26,12 @@ export default function HeaderNavigation() {
                 asChild
                 className={navigationMenuTriggerStyle()}
               >
-                <Link href={link.href}>{link.label}</Link>
+                <NextLink
+                  exactActiveClass="font-semibold text-electric-600 dark:text-electric"
+                  href={link.href}
+                >
+                  {link.label}
+                </NextLink>
               </NavigationMenuLink>
             )}
 
@@ -37,14 +42,17 @@ export default function HeaderNavigation() {
                   <ul className="gap-2 grid grid-cols-2 w-[400px]">
                     {link.children.map((child) => (
                       <NavigationMenuLink key={child.label} asChild>
-                        <Link href={child.href ?? "#"}>
+                        <NextLink
+                          href={child.href ?? "#"}
+                          exactActiveClass="font-semibold text-electric-600 dark:text-electric"
+                        >
                           <p>{child.label}</p>
                           {child.description && (
                             <p className="text-muted-foreground text-sm">
                               {child.description}
                             </p>
                           )}
-                        </Link>
+                        </NextLink>
                       </NavigationMenuLink>
                     ))}
                   </ul>
