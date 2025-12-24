@@ -88,7 +88,11 @@ function ProductList() {
               />
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 space-y-2">
+              <div className="ml-1">
+                <h3 className="text-lg font-bold">{product.name}</h3>
+                <p className="text-sm text-muted-foreground">{product.description}</p>
+              </div>
               <Button
                 asChild
                 variant={product.featured ? "default" : "outline"}

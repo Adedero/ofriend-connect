@@ -129,18 +129,26 @@ export const data = {
     industryList: [
       {
         name: "Higher Education",
+        description: "This is the description",
+        href: "/industries#schools",
         imageUrl: "/img/home/industry-higher-education.png",
       },
       {
         name: "Corporate Training",
+        description: "This is the description",
+        href: "/industries#schools",
         imageUrl: "/img/home/industry-corporate-training.png",
       },
       {
         name: "Certificate Programs",
+        description: "This is the description",
+        href: "/industries#schools",
         imageUrl: "/img/home/industry-certificate-programs.png",
       },
       {
         name: "Remote Learning",
+        description: "This is the description",
+        href: "/industries#schools",
         imageUrl: "/img/home/industry-remote-learning.png",
       },
     ],

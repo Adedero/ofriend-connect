@@ -51,7 +51,7 @@ function CallToAction() {
       <Button size="lg">{data.hero.cta.button1.text}</Button>
 
       <Button size="lg" variant="outline">
-        {data.hero.cta.button1.text}
+        {data.hero.cta.button2.text}
       </Button>
     </div>
   );
