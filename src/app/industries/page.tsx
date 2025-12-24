@@ -1,8 +1,17 @@
-export default function Industries() {
+import Testimonials from "@/components/global/testimonials";
+import IndustriesHeader from "./header";
+import CTA from "@/components/global/cta";
+import Industries from "./industries";
+
+export default function IndustriesPage() {
   return (
-    <div className="flex-col-center h-screen">
-      <h1 className="font-bold text-muted-foreground text-5xl">Industries Page</h1>
-      <p>Coming Soon</p>
+    <div>
+      <IndustriesHeader />
+      <Industries />
+      <Testimonials />
+      <div className="py-16">
+        <CTA />
+      </div>
     </div>
   );
 }
