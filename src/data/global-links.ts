@@ -45,22 +45,26 @@ export const headerLinks: NavigationLink[] = [
     children: [
       {
         label: "Schools",
-        description: "Lorem ipsum dolor sit ammet consequetur",
+        description:
+          "Comprehensive solutions for K-12 schools and higher education institutions",
         href: "/industries#schools",
       },
       {
         label: "Businesses",
-        description: "Lorem ipsum dolor sit ammet consequetur",
+        description:
+          "Elevate your employee development programs with professional-grade assessment tools",
         href: "/industries#businesses",
       },
       {
         label: "Certificate Programs",
-        description: "Lorem ipsum dolor sit ammet consequetur",
+        description:
+          "Maintain the credibility and value of your certifications with industry-leading proctoring technology",
         href: "/industries#certificate-programs",
       },
       {
         label: "Remote Learning",
-        description: "Lorem ipsum dolor sit ammet consequetur",
+        description:
+          "Bridge the distance with tools built for virtual education",
         href: "/industries#remote-learning",
       },
     ],

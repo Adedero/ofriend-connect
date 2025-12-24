@@ -4,7 +4,7 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
+  // SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -43,9 +43,9 @@ export default function HeaderNavigationMobile() {
             <div>
               <SheetTitle>Ofriend</SheetTitle>
 
-              <SheetDescription>
+              {/*<SheetDescription>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
-              </SheetDescription>
+              </SheetDescription>*/}
             </div>
           </div>
         </SheetHeader>
