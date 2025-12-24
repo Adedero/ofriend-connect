@@ -17,12 +17,25 @@ export const headerLinks: NavigationLink[] = [
       {
         label: "Sentra",
         href: "/products/sentra",
-        description: "Lorem ipsum dolor sit ammet consequetur",
+        description:
+          "Secure online proctoring for remote exams and assessments",
       },
       {
         label: "Presio",
         href: "/products/presio",
-        description: "Lorem ipsum dolor sit ammet consequetur",
+        description: "Automated attendance tracking and classroom management",
+      },
+      {
+        label: "Fora",
+        href: "/products/fora",
+        description:
+          "Interactive educational forums and peer learning communities",
+      },
+      {
+        label: "Verity",
+        href: "/products/verity",
+        description:
+          "Comprehensive plagiarism detection and originality checking",
       },
     ],
   },

@@ -1,11 +1,11 @@
 import Testimonials from "@/components/global/testimonials";
-import SentraHeader from "./header";
+import PresioHeader from "./header";
 import CTA from "@/components/global/cta";
 
-export default function SentraPage() {
+export default function PresioPage() {
   return (
     <div className="mt-14">
-      <SentraHeader />
+      <PresioHeader />
       <Testimonials />
       <div className="py-16">
         <CTA />
