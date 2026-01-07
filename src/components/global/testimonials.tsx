@@ -18,10 +18,10 @@ export default function Testimonials() {
       </header>
 
       <div className="mt-20 px-5 lg:px-20 xl:px-40">
-        <ul className="gap-4 grid md:grid-cols-3">
+        <ul className="gap-4 grid items-stretch md:grid-cols-3">
           {data.testimonials.testimonialList.map((user) => (
             <li key={user.name}>
-              <div className="bg-background px-4 py-8 rounded-lg">
+              <div className="bg-background h-full px-4 py-8 rounded-lg">
                 <header className="flex justify-between items-start gap-4">
                   <div className="relative rounded-full size-12 overflow-hidden">
                     <img

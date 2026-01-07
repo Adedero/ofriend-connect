@@ -36,10 +36,14 @@ function PartnerLogos() {
         <div className="grid md:grid-cols-3 col-span-8 divide-x divide-y divide-muted-background">
           {data.partners.logos.map((logo) => (
             <div
-              key={logo}
+              key={logo.name}
               className="flex-center px-5 py-10 font-bold text-muted-foreground hover:text-foreground cursor-context-menu"
             >
-              {logo}
+              <img
+                src={logo.logoURL}
+                alt={logo.name}
+                className="w-full h-20 object-cover"
+              />
             </div>
           ))}
         </div>

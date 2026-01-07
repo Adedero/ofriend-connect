@@ -5,10 +5,6 @@ interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
   {
-    name: "LinkedIn",
-    href: "#",
-  },
-  {
     name: "Facebook",
     href: "#",
   },
@@ -18,6 +14,10 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "X",
+    href: "#",
+  },
+  {
+    name: "LinkedIn",
     href: "#",
   },
 ];

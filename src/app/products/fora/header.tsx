@@ -14,7 +14,7 @@ export default function PresioHeader() {
       <img
         src={data.header.image}
         alt={data.header.headline}
-        className="object-cover object-top -z-1 absolute"
+        className="object-cover object-top top-0 -z-1 absolute"
       />
     </header>
   );

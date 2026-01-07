@@ -41,8 +41,14 @@ export const data = {
     headline: "Join the Movement for Honest Learning",
     description:
       "We partner with institutions and organizations to provide our tools to the world.",
-
-    logos: Array.from({ length: 9 }, (_, idx) => `Logo ${idx + 1}`),
+    logos: [
+      { name: "Smart Globe", logoURL: "/img/partners/smart-globe.jpg" },
+      { name: "Ed Exa", logoURL: "/img/partners/ed-exa.png" },
+      { name: "Future Leaders", logoURL: "/img/partners/future-leaders.jpg" },
+      { name: "Owling", logoURL: "/img/partners/owling.png" },
+      { name: "Connect Enterprise", logoURL: "/img/partners/connect-e.png" },
+      { name: "Universal Tech", logoURL: "/img/partners/universal-tech.png" },
+    ],
   },
 
   products: {

@@ -18,7 +18,7 @@ export default function WhatDrivesUs() {
                 <img
                   src={item.imageURL}
                   alt=""
-                  className="absolute object-cover w-full h-full"
+                  className="object-cover size-10"
                 />
                 <p className="text-sm">{item.text}</p>
               </div>

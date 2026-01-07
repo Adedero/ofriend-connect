@@ -36,12 +36,12 @@ export default function Products() {
             </div>
 
             <div className="bottom-2 left-4 z-1 absolute">
-              <div className="flex items-center gap-2 bg-white rounded-full group-hover:rounded-lg w-12 group-hover:w-80 h-12 overflow-hidden transition-[width]">
+              <div className="flex items-center gap-2 bg-white rounded-full h-12 w-12 group-hover:w-80 overflow-hidden transition-[width]">
                 <div className="flex justify-center items-center bg-white rounded-full group-hover:rounded-lg size-12 shrink-0">
                   <img
                     src={featured.logoUrl || "/logo.png"}
                     alt={`${featured.name} logo`}
-                    className="absolute object-cover w-full h-full"
+                    className="absolute object-cover size-12"
                   />
                 </div>
 

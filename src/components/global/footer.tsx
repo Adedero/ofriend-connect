@@ -26,11 +26,11 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <div className="gap-2 grid grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]">
+            <div className="gap-2 grid md:grid-cols-[repeat(auto-fit,minmax(10rem,1fr))]">
               {data.navigation.map((nav) => (
                 <div
                   key={nav.groupName}
-                  className="justify-center place-content-start grid"
+                  className="md:justify-center place-content-start grid"
                 >
                   <p className="font-medium">{nav.groupName}</p>
 
