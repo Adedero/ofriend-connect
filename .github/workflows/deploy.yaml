@@ -30,7 +30,19 @@ jobs:
       - name: Prepare deployment bundle
         run: |
           rm -rf connect
+          mkdir -p connect
+
+          # Copy server & node_modules
           cp -r .next/standalone connect
+
+          # Copy static assets
+          mkdir -p connect/.next
+          cp -r .next/static connect/.next/static
+
+          # Copy public folder if exists
+          if [ -d public ]; then
+            cp -r public connect/public
+          fi
 
       # Deploy to Namecheap
       - name: Deploy to Namecheap
