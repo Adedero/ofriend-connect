@@ -1,0 +1,53 @@
+name: Build & Deploy to Namecheap
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js application
+        run: npm run build
+        env:
+          NODE_ENV: production
+
+      # Prepare standalone bundle
+      - name: Prepare deployment bundle
+        run: |
+          rm -rf connect
+          mkdir -p connect
+
+          cp -r .next/standalone/* connect/
+
+          mkdir -p connect/.next
+          cp -r .next/static connect/.next/static
+
+          if [ -d public ]; then
+            cp -r public connect/public
+          fi
+
+      # Deploy to Namecheap
+      - name: Deploy to Namecheap
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avz --delete --exclude='.git'
+          path: connect/
+          remote_path: ~/public_html/connect
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_KEY }}
