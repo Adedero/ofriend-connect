@@ -34,6 +34,7 @@ jobs:
           mkdir -p connect
 
           # Copy everything inside standalone directly into connect/
+          ls .next/standalone
           cp -r .next/standalone/* connect/
 
           mkdir -p connect/.next/static
