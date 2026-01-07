@@ -33,7 +33,11 @@ jobs:
           mkdir -p connect
 
           cp -r .next/standalone connect
+          
+          mkdir -p connect/.next/static
           cp -r .next/static connect/.next/static
+          
+          mkdir -p connect/public
           cp -r public connect/public
 
       # Deploy to Namecheap
