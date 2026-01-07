@@ -29,16 +29,21 @@ jobs:
       # Prepare standalone bundle
       - name: Prepare deployment bundle
         run: |
+          # Clear previous bundle
           rm -rf connect
           mkdir -p connect
 
-          cp -r .next/standalone connect
-          
-          mkdir -p connect/.next/static
+          # Copy everything inside standalone directly into connect/
+          cp -r .next/standalone/* connect/
+
+          # Copy static assets manually (Next.js sometimes doesn't include in standalone)
+          mkdir -p connect/.next
           cp -r .next/static connect/.next/static
-          
-          mkdir -p connect/public
-          cp -r public connect/public
+
+          # Copy public folder if it exists
+          if [ -d public ]; then
+            cp -r public connect/public
+          fi
 
       # Deploy to Namecheap
       - name: Deploy to Namecheap
