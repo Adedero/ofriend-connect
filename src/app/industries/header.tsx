@@ -1,6 +1,5 @@
 import SectionTag from "@/components/global/section-tag";
 import { data } from "@/content/pages/industries";
-import Image from "next/image";
 
 export default function IndustriesHeader() {
   return (
@@ -11,15 +10,16 @@ export default function IndustriesHeader() {
           <h1 className="text-center text-white font-semibold text-3xl">
             {data.header.headline}
           </h1>
-          <p className="text-white text-center max-w-xl">{data.header.description}</p>
+          <p className="text-white text-center max-w-xl">
+            {data.header.description}
+          </p>
         </div>
       </div>
 
-      <Image
+      <img
         src={data.header.image}
         alt={data.header.headline}
-        fill
-        className="object-cover object-top -z-1"
+        className="w-full h-full object-cover object-top -z-1 absolute"
       />
     </header>
   );

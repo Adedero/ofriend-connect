@@ -6,7 +6,7 @@ export interface SectionTagProps {
   inverted?: boolean;
   labelClass?: string;
   className?: string;
-  children?: ReactNode
+  children?: ReactNode;
 }
 
 export default function SectionTag(props: SectionTagProps) {

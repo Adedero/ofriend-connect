@@ -1,7 +1,6 @@
 import { data } from "@/content/pages/home";
 import SectionTag from "../global/section-tag";
 import { BadgeCheck } from "lucide-react";
-import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -23,11 +22,10 @@ export default function AboutUs() {
 
         <div className="gap-10 grid lg:grid-cols-12 w-full lg:max-w-[80%]">
           <div className="relative lg:order-2 lg:col-span-8 h-80">
-            <Image
+            <img
               src={data.about.imageUrl}
               alt={data.about.title}
-              fill
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover absolute w-full h-full"
             />
           </div>
           <div className="lg:order-1 lg:col-span-4">

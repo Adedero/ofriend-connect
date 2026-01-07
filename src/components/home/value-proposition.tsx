@@ -1,7 +1,6 @@
 import { data } from "@/content/pages/home";
 import SectionTag from "../global/section-tag";
 import { BadgeCheck } from "lucide-react";
-import Image from "next/image";
 
 export default function ValueProposition() {
   return (
@@ -26,11 +25,10 @@ export default function ValueProposition() {
             <div className="-top-5 right-5 z-1 absolute bg-electric p-3 text-medium text-white text-sm">
               {data.valueProposition.image.label}
             </div>
-            <Image
+            <img
               src={data.valueProposition.image.src}
               alt={data.valueProposition.image.alt}
-              fill
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover absolute w-full h-full"
             />
           </div>
           <div className="lg:order-1 lg:col-span-4">

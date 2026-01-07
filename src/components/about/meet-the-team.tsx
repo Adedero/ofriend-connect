@@ -1,5 +1,4 @@
 import { data } from "@/content/pages/about";
-import Image from "next/image";
 
 export default function MeetTheTeam() {
   return (
@@ -21,11 +20,10 @@ export default function MeetTheTeam() {
                 <p className="text-sm font-semibold">{member.name}</p>
                 <p className="text-xs">{member.title}</p>
               </div>
-              <Image
+              <img
                 src={member.image}
                 alt={member.name}
-                fill
-                className="object-cover"
+                className="object-cover absolute w-full h-full"
               />
             </div>
           ))}

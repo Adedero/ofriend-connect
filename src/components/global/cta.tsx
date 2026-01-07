@@ -1,5 +1,5 @@
 import { data } from "@/content/components/cta";
-import Image from "next/image";
+
 import CTAForm from "./cta-form";
 
 export default function CTA() {
@@ -14,26 +14,20 @@ export default function CTA() {
             <CTAForm />
           </div>
         </div>
-        <Image
+        <img
           src="/img/home/person-1.png"
           alt=""
-          width={250}
-          height={300}
-          className="hidden md:block right-0 bottom-0 z-1 absolute"
+          className="hidden md:block right-0 bottom-0 z-1 absolute object-cover w-full h-full"
         />
-        <Image
+        <img
           src="/img/home/abstract-decor-1.png"
           alt=""
-          width={700}
-          height={100}
-          className="right-10 absolute"
+          className="right-10 absolute object-cover w-full h-full"
         />
-        <Image
+        <img
           src="/img/home/abstract-decor-1.png"
           alt=""
-          width={500}
-          height={100}
-          className="right-0 bottom-0 absolute rotate-180"
+          className="right-0 bottom-0 absolute rotate-180 object-cover w-full h-full"
         />
         <div className="w-full h-ful"></div>
       </div>

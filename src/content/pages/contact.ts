@@ -22,6 +22,6 @@ export const data = {
   },
 
   contactForm: {
-    headline: "Send us a message"
-  }
+    headline: "Send us a message",
+  },
 };

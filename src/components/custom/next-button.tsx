@@ -7,13 +7,14 @@ import { cn } from "@/lib/utils";
 import type { VariantProps } from "class-variance-authority";
 
 interface NextButtonProps
-  extends Omit<React.ComponentProps<"button">, "onClick">,
+  extends
+    Omit<React.ComponentProps<"button">, "onClick">,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
   loading?: boolean;
   loadingAuto?: boolean;
   onClick?: (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   ) => void | Promise<unknown>;
 }
 
@@ -31,7 +32,9 @@ export function NextButton({
 }: NextButtonProps) {
   const [isAutoLoading, setIsAutoLoading] = React.useState(false);
 
-  const handleClick = async (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const handleClick = async (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => {
     if (!onClick) return;
 
     const maybePromise = onClick(event);

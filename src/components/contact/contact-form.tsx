@@ -136,7 +136,6 @@ export default function ContactForm() {
                     {...field}
                     id="contact-form-messsage"
                     aria-invalid={fieldState.invalid}
-                    
                   />
                   {fieldState.invalid && (
                     <FieldError errors={[fieldState.error]} />

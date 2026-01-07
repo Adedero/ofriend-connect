@@ -1,5 +1,4 @@
 import { data } from "@/content/pages/about";
-import Image from "next/image";
 import SectionTag from "../global/section-tag";
 
 export default function AboutHeader() {
@@ -14,11 +13,10 @@ export default function AboutHeader() {
       </div>
 
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-1">
-        <Image
+        <img
           src={data.header.imageURL}
           alt={data.header.title}
-          fill
-          className="object-cover object-top"
+          className="object-cover object-top absolute w-full h-full"
         />
       </div>
     </header>

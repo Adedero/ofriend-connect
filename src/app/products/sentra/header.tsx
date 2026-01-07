@@ -1,6 +1,5 @@
 import SectionTag from "@/components/global/section-tag";
 import { data } from "@/content/pages/sentra";
-import Image from "next/image";
 
 export default function SentraHeader() {
   return (
@@ -12,11 +11,10 @@ export default function SentraHeader() {
         </h1>
       </div>
 
-      <Image
+      <img
         src={data.header.image}
         alt={data.header.headline}
-        fill
-        className="object-cover object-top -z-1"
+        className="object-cover object-top -z-1 absolute"
       />
     </header>
   );

@@ -3,7 +3,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function NextErrorAlert({
   title,
-  description
+  description,
 }: {
   title?: string;
   description: string | React.ReactNode;
@@ -12,7 +12,9 @@ export default function NextErrorAlert({
     <Alert className="bg-destructive/5 text-destructive border-destructive/20">
       <AlertCircleIcon />
       <AlertTitle>{title || "Error"}</AlertTitle>
-      <AlertDescription className="text-destructive/80">{description}</AlertDescription>
+      <AlertDescription className="text-destructive/80">
+        {description}
+      </AlertDescription>
     </Alert>
   );
 }

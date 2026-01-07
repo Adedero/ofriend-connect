@@ -1,6 +1,6 @@
 import { data } from "@/content/pages/home";
 import SectionTag from "../global/section-tag";
-import Image from "next/image";
+
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
@@ -30,11 +30,10 @@ export default function Industries() {
             <li key={industry.name}>
               <div className="group space-y-2 bg-background p-2 rounded-xl">
                 <div className="relative rounded-lg w-full h-60 overflow-hidden">
-                  <Image
+                  <img
                     src={industry.imageUrl}
                     alt={industry.name}
-                    fill
-                    className="object-cover"
+                    className="object-cover absolute w-full h-full"
                   />
                 </div>
 
@@ -42,9 +41,7 @@ export default function Industries() {
                   <div className="overflow-hidden min-h-0 space-y-2 flex flex-col items-center justify-center">
                     <p className="text-center">{industry.description}</p>
                     <Button asChild className="w-full">
-                      <Link href={industry.href}>
-                        More
-                      </Link>
+                      <Link href={industry.href}>More</Link>
                     </Button>
                     <Separator className="mt-2" />
                   </div>

@@ -1,6 +1,6 @@
 import { data } from "@/content/pages/home";
 import SectionTag from "../global/section-tag";
-import Image from "next/image";
+
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Badge } from "../ui/badge";
@@ -38,11 +38,10 @@ export default function Products() {
             <div className="bottom-2 left-4 z-1 absolute">
               <div className="flex items-center gap-2 bg-white rounded-full group-hover:rounded-lg w-12 group-hover:w-80 h-12 overflow-hidden transition-[width]">
                 <div className="flex justify-center items-center bg-white rounded-full group-hover:rounded-lg size-12 shrink-0">
-                  <Image
+                  <img
                     src={featured.logoUrl || "/logo.png"}
-                    width={28}
-                    height={28}
                     alt={`${featured.name} logo`}
+                    className="absolute object-cover w-full h-full"
                   />
                 </div>
 
@@ -50,11 +49,10 @@ export default function Products() {
               </div>
             </div>
             {/* Carousel of gallery images */}
-            <Image
+            <img
               src={featured.gallery?.[0] ?? ""}
               alt={featured.name}
-              fill
-              className="object-cover"
+              className="object-cover absolute w-full h-full"
             />
           </div>
         </div>
@@ -80,18 +78,19 @@ function ProductList() {
         <li key={product.name}>
           <div className="bg-background p-2 rounded-xl">
             <div className="relative rounded-xl w-full h-44 overflow-hidden">
-              <Image
+              <img
                 src={product.coverImageUrl}
                 alt={`${product.name} cover image`}
-                fill
-                className="object-cover"
+                className="object-cover absolute w-full h-full"
               />
             </div>
 
             <div className="pt-2 space-y-2">
               <div className="ml-1">
                 <h3 className="text-lg font-bold">{product.name}</h3>
-                <p className="text-sm text-muted-foreground">{product.description}</p>
+                <p className="text-sm text-muted-foreground">
+                  {product.description}
+                </p>
               </div>
               <Button
                 asChild

@@ -47,7 +47,7 @@ export default function NextLink({
     isExact && exactActiveClass,
     isActive && !isExact && activeClass,
     !isActive && inactiveClass,
-    disabled && "pointer-events-none opacity-60"
+    disabled && "pointer-events-none opacity-60",
   );
 
   if (disabled) {

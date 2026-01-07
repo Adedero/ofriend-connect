@@ -1,7 +1,5 @@
 import { data } from "@/content/pages/home";
 import SectionTag from "../global/section-tag";
-import Image from "next/image";
-import { Button } from "../ui/button";
 import { Quote } from "lucide-react";
 
 export default function Testimonials() {
@@ -26,11 +24,10 @@ export default function Testimonials() {
               <div className="bg-background px-4 py-8 rounded-lg">
                 <header className="flex justify-between items-start gap-4">
                   <div className="relative rounded-full size-12 overflow-hidden">
-                    <Image
+                    <img
                       src={user.imageUrl}
                       alt={user.name}
-                      fill
-                      className="object-cover"
+                      className="object-cover absolute w-full h-full"
                     />
                   </div>
 

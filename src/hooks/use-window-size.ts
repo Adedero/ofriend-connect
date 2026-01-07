@@ -32,7 +32,7 @@ const defaultBreakpoints: Breakpoints = {
   md: 768,
   lg: 1024,
   xl: 1280,
-  "2xl": 1536
+  "2xl": 1536,
 };
 
 export function useWindowSize(options: UseWindowSizeOptions = {}): WindowSize {
@@ -40,7 +40,7 @@ export function useWindowSize(options: UseWindowSizeOptions = {}): WindowSize {
 
   const breakpoints = useMemo(
     () => ({ ...defaultBreakpoints, ...breakPointsOption }),
-    [breakPointsOption]
+    [breakPointsOption],
   );
 
   const getSize = useCallback((): WindowSize => {
@@ -55,13 +55,14 @@ export function useWindowSize(options: UseWindowSizeOptions = {}): WindowSize {
         isMedium: false,
         isLarge: false,
         isXLarge: false,
-        is2xLarge: false
+        is2xLarge: false,
       };
     }
 
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const isTouchDevice = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+    const isTouchDevice =
+      "ontouchstart" in window || navigator.maxTouchPoints > 0;
     const orientation = width > height ? "landscape" : "portrait";
 
     let breakpoint: BreakpointKey = "sm";
@@ -81,7 +82,7 @@ export function useWindowSize(options: UseWindowSizeOptions = {}): WindowSize {
       isMedium: width >= breakpoints.md && width < breakpoints.lg,
       isLarge: width >= breakpoints.lg && width < breakpoints.xl,
       isXLarge: width >= breakpoints.xl && width < breakpoints["2xl"],
-      is2xLarge: width >= breakpoints["2xl"]
+      is2xLarge: width >= breakpoints["2xl"],
     };
   }, [breakpoints]);
 

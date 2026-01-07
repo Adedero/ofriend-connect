@@ -11,7 +11,9 @@ export default function Hero() {
         <div className="flex flex-col justify-center items-center lg:items-start gap-5 px-5 md:px-10 lg:px-5 xl:px-10 py-10 lg:max-w-96 xl:max-w-132">
           <div className="flex items-center gap-5 bg-muted p-1 rounded-full">
             <AvatarDesign />
-            <p className="font-semibold text-xs">{data.hero.userMetric.label}</p>
+            <p className="font-semibold text-xs">
+              {data.hero.userMetric.label}
+            </p>
           </div>
           <h1 className="font-bold text-5xl lg:text-left text-center text-balance lg:text-pretty">
             {data.hero.headline}

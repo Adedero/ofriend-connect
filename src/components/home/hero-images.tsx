@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function HeroImages() {
@@ -11,11 +10,10 @@ export default function HeroImages() {
         animate={{ scale: 1 }}
         className="relative bg-muted rounded-2xl w-[45%] h-full overflow-hidden"
       >
-        <Image
+        <img
           src="/img/home/home-hero-person-1.png"
           alt=""
-          fill
-          className="object-cover mix-blend-multiply dark:mix-blend-normal"
+          className="object-cover mix-blend-multiply dark:mix-blend-normal absolute w-full h-full"
         />
       </motion.div>
       <motion.div
@@ -26,11 +24,10 @@ export default function HeroImages() {
         }}
         className="relative bg-muted rounded-2xl w-[35%] h-[calc(100%-5rem)] overflow-hidden"
       >
-        <Image
+        <img
           src="/img/home/home-hero-person-2.png"
           alt=""
-          fill
-          className="object-cover mix-blend-multiply dark:mix-blend-normal"
+          className="object-cover mix-blend-multiply dark:mix-blend-normal absolute w-full h-full"
         />
       </motion.div>
       <motion.div
@@ -41,11 +38,10 @@ export default function HeroImages() {
         }}
         className="relative bg-muted rounded-2xl w-[30%] h-[calc(100%-10rem)] overflow-hidden"
       >
-        <Image
+        <img
           src="/img/home/home-hero-person-3.png"
           alt=""
-          fill
-          className="object-cover mix-blend-multiply dark:mix-blend-normal"
+          className="object-cover mix-blend-multiply dark:mix-blend-normal absolute w-full h-full"
         />
       </motion.div>
     </div>
