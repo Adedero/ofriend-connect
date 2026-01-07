@@ -37,7 +37,6 @@ jobs:
           cp -r .next/standalone/* connect/
 
           # Copy static assets manually (Next.js sometimes doesn't include in standalone)
-          mkdir -p connect/.next
           cp -r .next/static connect/.next/static
 
           # Copy public folder if it exists
