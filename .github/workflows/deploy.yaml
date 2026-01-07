@@ -36,13 +36,11 @@ jobs:
           # Copy everything inside standalone directly into connect/
           cp -r .next/standalone/* connect/
 
-          # Copy static assets manually (Next.js sometimes doesn't include in standalone)
-          cp -r .next/static connect/.next/static
+          mkdir -p connect/.next/static
+          cp -r .next/static/* connect/.next/static/
 
-          # Copy public folder if it exists
-          if [ -d public ]; then
-            cp -r public connect/public
-          fi
+          mkdir -p connect/public
+          cp -r public/* connect/public
 
       # Deploy to Namecheap
       - name: Deploy to Namecheap
